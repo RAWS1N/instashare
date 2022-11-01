@@ -1,0 +1,5 @@
+export {default as HomePage} from './HomePage'
+export {default as Post} from './Post'
+export {default as Login} from './Login'
+export {default as Dashboard} from './Profile'
+export {default as Comment} from './Comment'
