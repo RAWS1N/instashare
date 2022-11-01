@@ -33,7 +33,7 @@ function Profile() {
   }
 
   function logOut() {
-    Notifier("Logged out successfully")
+    Notifier("Logged out successfully");
     signOut(auth);
   }
   function deletePost(id) {
@@ -61,11 +61,11 @@ function Profile() {
         {posts.map((post) => (
           <Message key={post.id} {...post}>
             <div className="flex items-center gap-4 font-medium text-2xl mt-4 bg-white pr-4 cursor-pointer">
-              <div className="flex items-center">
-                <MdDeleteForever
-                  onClick={() => deletePost(post.id)}
-                  className="text-red-500 "
-                />
+              <div
+                onClick={() => deletePost(post.id)}
+                className="flex items-center"
+              >
+                <MdDeleteForever className="text-red-500 " />
                 <p className="text-sm self-end">Delete</p>
               </div>
               <Link to={`/post/${post.id}`}>
