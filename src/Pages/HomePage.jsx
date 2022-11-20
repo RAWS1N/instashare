@@ -28,7 +28,7 @@ function HomePage() {
           <Link to={`/comment/${post.id}`}>
           <button className="bg-cyan-500 px-4 py-1 mt-4 my-2 rounded-lg text-white">{post?.comments?.length ? post?.comments?.length :0 } Comments</button>
           </Link>
-          <h4 className="bg-cyan-500 px-4 py-1 mt-4 my-2 rounded-lg text-white">Share</h4>
+          {/* <h4 className="bg-cyan-500 px-4 py-1 mt-4 my-2 rounded-lg text-white">Share</h4> */}
         </div>
       </Message>)}
     </div>
